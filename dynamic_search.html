@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Dynamic Search</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #searchContainer {
+            text-align: center;
+        }
+
+        #searchInput {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #resultList {
+            list-style-type: none;
+            padding: 0;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .resultItem {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <ul id="resultList"></ul>
+    </div>
+
+    <script src="dynamic_search.js"></script>
+
+</body>
+</html>
